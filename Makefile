@@ -27,6 +27,11 @@ create-environment:
 	git push -u origin main
 	$(MAKE) clean
 
+.PHONY: requirements
+## Update requirements.txt
+requirements:
+	pip3 freeze > requirements.txt
+
 .PHONY: clean
 ## Delete all compiled Python files
 clean:
