@@ -1,0 +1,16 @@
+base_url: https://{}.roomz.asia/api?c=Rooms&a=getAsyncDataForListPage&area={}&rentalType=3&page=1
+
+country_code: sg
+
+areas:
+  - west-singapore
+  - central-singapore
+  - east-singapore
+  - north-east-singapore
+  - north-singapore
+
+min_rent: 200
+
+max_rent: 1500
+
+output_file: singapore_rental_lists.csv

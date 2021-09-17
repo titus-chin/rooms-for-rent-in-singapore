@@ -1,0 +1,20 @@
+title: Rooms for Rent in Singapore
+
+input_file: singapore_rental_lists.csv
+
+sort_by:
+  - Area
+  - Rent (S$/month)
+  - Location
+
+index: Area
+
+currency: S$
+
+markdown: "Source code can be found [here]({}). Created by [{}]({}), feel free to contact me!"
+
+github: https://github.com/titus-chin/rooms-for-rent-in-singapore
+
+author: Titus Chin
+
+linkedin: https://www.linkedin.com/in/titus-chin-jun-hong/
