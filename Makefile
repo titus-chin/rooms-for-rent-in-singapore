@@ -85,6 +85,7 @@ update:
 	source activate.sh && \
 	$(MAKE) scrape-data && \
 	$(MAKE) sync-data-to-s3
+	date > references/latest_data.txt
 	git add .
 	git commit -m "daily update"
 	git push
