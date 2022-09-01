@@ -81,7 +81,6 @@ target/
 # /data/interim/
 # /data/processed/
 # /data/raw/
-/data/singapore_rental_lists.csv
 
 # Mac OS-specific storage files
 .DS_Store

@@ -9,7 +9,7 @@ import _thread
 
 @st.cache(hash_funcs={_thread.RLock: id})
 def load_data(date):
-    """Load rental data to web app either from local machine or AWS S3
+    """Load rental data to web app either from github or AWS S3
     bucket.
 
     Parameters
@@ -31,7 +31,7 @@ def load_data(date):
         obj = client.get_object(Bucket=st.secrets["bucket"], Key=st.secrets["key"])
         input_path = obj["Body"]
     except:
-        input_path = f"{Path.cwd().joinpath('data', conf['input_file'])}"
+        input_path = "https://raw.githubusercontent.com/titus-chin/rooms-for-rent-in-singapore/main/data/singapore_rental_lists.csv"
 
     data = pd.read_csv(input_path)
     data.sort_values(conf["sort_by"], inplace=True)
